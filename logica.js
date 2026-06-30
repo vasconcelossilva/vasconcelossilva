@@ -1,4 +1,4 @@
-function navegarPara(telaId) {
+function navegarPara(telaId, atualizarHistorico = true) {
             // 1. Esconde todas as seções
             const secoes = document.querySelectorAll('.view-section');
             secoes.forEach(secao => {
@@ -17,13 +17,36 @@ function navegarPara(telaId) {
                 secaoAlvo.classList.remove('hidden');
             }
 
-            // 4. Marca o botão clicado como ativo (baseado no texto do botão)
-            // Uma maneira simples de achar o botão clicado
-            const btnClicado = Array.from(botoes).find(b => b.getAttribute('onclick').includes(telaId));
+            // 4. Marca o botão clicado como ativo
+            const btnClicado = Array.from(botoes).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(telaId));
             if (btnClicado) {
                 btnClicado.classList.add('active');
             }
 
-            // 5. Rola a página para o topo suavemente
+            // 5. Atualiza a URL na barra do navegador (History API)
+            if (atualizarHistorico) {
+                const novaUrl = telaId === 'home' ? '/' : '/' + telaId;
+                window.history.pushState({ tela: telaId }, '', novaUrl);
+            }
+
+            // 6. Rola a página para o topo suavemente
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        // Lida com o acesso direto por link (Ex: colar /cliente direto no navegador)
+        window.addEventListener('DOMContentLoaded', () => {
+            const caminho = window.location.pathname.replace(/^\/|\/$/g, ''); // Pega o caminho sem barras
+            const telaInicial = (caminho === 'cliente' || caminho === 'publicacoes') ? caminho : 'home';
+            
+            // Inicia na tela correta sem empurrar um novo histórico
+            navegarPara(telaInicial, false);
+        });
+
+        // Permite que o botão de "Voltar" e "Avançar" do navegador funcionem
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.tela) {
+                navegarPara(event.state.tela, false);
+            } else {
+                navegarPara('home', false);
+            }
+        });
