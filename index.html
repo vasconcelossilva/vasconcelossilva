@@ -1,113 +1,296 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F. Vasconcelos Silva Advocacia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1A1A1A">
+<meta name="description" content="F. Vasconcelos Silva Advocacia — Francisco G. Vasconcelos Silva, OAB/DF 88.412. Consultoria, pareceres, planejamento previdenciário, contratos e assessoria jurídica empresarial.">
+<title>F. Vasconcelos Silva Advocacia</title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/9HVJcHXP/Apenas-logo-para-fundo-branco.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <nav>
-        <div class="nav-logo" onclick="navegarPara('home')">F. Vasconcelos Silva</div>
-        <div class="nav-links">
-            <button class="nav-btn active" onclick="navegarPara('home')">Home & Serviços</button>
-            <button class="nav-btn" onclick="navegarPara('publicacoes')">Publicações Jurídicas</button>
-            <button class="nav-btn btn-destaque" onclick="navegarPara('cliente')">Área do Cliente</button>
+  <button class="nav-logo" data-view="home" aria-label="Página inicial — F. Vasconcelos Silva Advocacia">
+    <img src="https://i.ibb.co/b8x6FDR/Logo-para-fundo-preto.png" alt="">
+  </button>
+
+  <div class="nav-links">
+    <button class="nav-btn active" data-view="home">Home &amp; Serviços</button>
+    <button class="nav-btn" data-view="publicacoes">Publicações<br>Jurídicas</button>
+    <button class="nav-btn btn-destaque" data-view="cliente">Área do Cliente</button>
+  </div>
+</nav>
+
+<!-- ===================== HOME ===================== -->
+<div id="view-home" class="view-section">
+  <div class="stack">
+
+    <section class="panel panel-hero">
+      <div class="hero-inner">
+        <span class="hero-mark"><img src="https://i.ibb.co/b8x6FDR/Logo-para-fundo-preto.png" alt=""></span>
+        <h1>F. Vasconcelos Silva</h1>
+        <p class="hero-oab">Sociedade Individual de Advocacia</p>
+        <p class="lead">Prestação de serviços jurídicos com foco em transparência, modernidade e resultados.</p>
+        <button class="cta-button" data-acao="https://wa.me/message/AQSF4VGL2SPEH1">Agendar Consultoria</button>
+      </div>
+    </section>
+
+    <section class="panel panel-areas">
+      <div class="panel-intro">
+        <h2>Atendimento Especializado</h2>
+        <p class="lead">Atuação dedicada nas áreas em que o cotidiano jurídico mais exige atenção e cuidado técnico.</p>
+        <div class="areas-grid">
+
+          <div class="area-item">
+            <button class="area-badge" type="button" aria-expanded="false">Direito Civil</button>
+            <div class="area-tooltip">Cuida das questões do dia a dia entre pessoas ou empresas: contratos, indenizações, disputas de vizinhança, cobranças, responsabilidade por danos, conflitos de família e sucessão (herança, partilha, guarda).</div>
+          </div>
+
+          <div class="area-item">
+            <button class="area-badge" type="button" aria-expanded="false">Direito Empresarial</button>
+            <div class="area-tooltip">Trata da vida jurídica da empresa: abertura e alteração de contratos sociais, disputas entre sócios, recuperação de créditos, contratos comerciais e prevenção de riscos no dia a dia do negócio.</div>
+          </div>
+
+          <div class="area-item">
+            <button class="area-badge" type="button" aria-expanded="false">Direito do Consumidor</button>
+            <div class="area-tooltip">Protege quem compra um produto ou contrata um serviço. Princípais ocorrências: cobranças indevidas, produtos com defeito, propaganda enganosa, cancelamento de contratos e negativação indevida do nome.</div>
+          </div>
+
+          <div class="area-item">
+            <button class="area-badge" type="button" aria-expanded="false">Direito Previdenciário</button>
+            <div class="area-tooltip">Envolve benefícios do INSS: aposentadoria, auxílio-doença, pensão por morte, revisão de benefícios e correção de erros no histórico de contribuições (CNIS).</div>
+          </div>
+
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <div id="view-home" class="view-section">
-        
-        <header class="hero">
-            <h1>F. Vasconcelos Silva Advocacia</h1>
-            <h3>Por Francisco G. Vasconcelos Silva | OAB/DF 88.412</h3>
-            <p>Prestação de serviços jurídicos com foco em transparência, modernidade e resultados.</p>
-            <a href="#" class="cta-button" onclick="alert('Aqui abriria o WhatsApp ou formulário de contato!')">Agendar Consultoria</a>
-        </header>
+        <section class="panel panel-service is-light">
+      <div class="panel-content">
+        <h3>Consultoria Jurídica</h3>
+        <p>Atendimento personalizado para esclarecimento de dúvidas, análise inicial de cenários e orientação legal estratégica. Ideal para quem busca entender seus direitos e deveres antes de tomar decisões importantes.</p>
+        <p class="service-note">Atendimento presencial ou on-line.</p>
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button" target="_blank" rel="noopener">Realizar Consultoria</a>
+      </div>
+    </section>
 
-        <section class="section-container">
-            <h2 class="section-title">Atendimento Especializado</h2>
-            
-            <div class="areas-grid">
-                <div class="area-badge">⚖️ Direito Civil</div>
-                <div class="area-badge">💼 Direito Empresarial</div>
-                <div class="area-badge">🛍 Direito do Consumidor</div>
-                <div class="area-badge">🏥 Direito Previdenciário</div>
-            </div>
+        <section class="panel panel-service is-dark">
+      <div class="panel-content">
+        <h3>Parecer Jurídico</h3>
+        <p>Estudo técnico, aprofundado e formal sobre uma questão jurídica complexa. O parecer oferece uma análise detalhada da legislação e da jurisprudência, conferindo segurança jurídica para tomadas de decisão de alta relevância.</p>
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button" target="_blank" rel="noopener">Solicitar Parecer</a>
+      </div>
+    </section>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <h4>1. Consultoria Jurídica</h4>
-                    <p>Atendimento personalizado para esclarecimento de dúvidas, análise inicial de cenários e orientação legal estratégica. Ideal para quem busca entender seus direitos e deveres antes de tomar decisões importantes.<br><br><em>• Atendimento presencial ou on-line.</em></p>
-                </div>
-                <div class="service-card">
-                    <h4>2. Parecer Jurídico</h4>
-                    <p>Estudo técnico, aprofundado e formal sobre uma questão jurídica complexa. O parecer oferece uma análise detalhada da legislação e da jurisprudência, conferindo segurança jurídica para tomadas de decisão de alta relevância.</p>
-                </div>
-                <div class="service-card">
-                    <h4>3. Planejamento Previdenciário</h4>
-                    <p>Análise detalhada do histórico de contribuições para identificar a melhor estratégia de aposentadoria. O objetivo é projetar o momento ideal para o pedido, simular o valor do benefício e corrigir eventuais falhas no CNIS.</p>
-                </div>
-                <div class="service-card">
-                    <h4>4. Análise e Elaboração de Contratos</h4>
-                    <p>Desenvolvimento, revisão e adequação de instrumentos contratuais. Segurança jurídica sob medida para proteger seus negócios, parcerias, transações imobiliárias e relações de consumo, minimizando riscos e prevenindo litígios.</p>
-                </div>
-                <div class="service-card">
-                    <h4>5. Assessoria Jurídica Empresarial</h4>
-                    <p>Suporte jurídico contínuo e preventivo focado em blindar a atividade empresarial. Atuamos na adequação às normas de defesa do consumidor, gestão de contratos, conformidade trabalhista e societária.</p>
-                </div>
-                <div class="service-card">
-                    <h4>6. Defesa e Ações Judiciais</h4>
-                    <p>Representação e patrocínio de interesses em processos judiciais e administrativos. Atuação técnica, ágil e comprometida na defesa de direitos perante os Tribunais e órgãos públicos.</p>
-                </div>
-            </div>
-        </section>
+    <section class="panel panel-service is-green">
+      <div class="panel-content">
+        <h3>Planejamento Previdenciário</h3>
+        <p>Análise detalhada do histórico de contribuições para identificar a melhor estratégia de aposentadoria. O objetivo é projetar o momento ideal para o pedido, simular o valor do benefício e corrigir eventuais falhas no CNIS.</p>
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button-white" target="_blank" rel="noopener">Fazer Planejamento</a>
+      </div>
+    </section>
 
-    </div>
+        <section class="panel panel-service is-light">
+      <div class="panel-content">
+        <h3>Análise e Elaboração de Contratos</h3>
+        <p>Desenvolvimento, revisão e adequação de instrumentos contratuais. Segurança jurídica sob medida para proteger seus negócios, parcerias, transações imobiliárias e relações de consumo, minimizando riscos e prevenindo litígios.</p>
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button" target="_blank" rel="noopener">Elaborar Contrato</a>
+      </div>
+    </section>
 
-    <div id="view-publicacoes" class="view-section hidden">
-        <section class="section-container">
-            <h2 class="section-title">Publicações Jurídicas</h2>
-            <p style="text-align: center; margin-bottom: 40px; color: #555;">Artigos, análises e atualizações sobre o cenário jurídico atual.</p>
+       <section class="panel panel-service is-dark">
+      <div class="panel-content">
+        <h3>Assessoria Jurídica Empresarial</h3>
+        <p>Suporte jurídico contínuo e preventivo focado em blindar a atividade empresarial. Atuamos na adequação às normas de defesa do consumidor, gestão de contratos, conformidade trabalhista e societária.</p>
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button" target="_blank" rel="noopener">Contratar Assessoria</a>
+      </div>
+    </section>
 
-            <div class="pub-grid">
-                <div class="pub-card">
-                    <span class="date">Publicado em 24 de Outubro, 2023</span>
-                    <h4>A importância do Planejamento Previdenciário antes da Aposentadoria</h4>
-                    <p>Entenda como a análise prévia do seu CNIS pode evitar prejuízos irreparáveis no momento da concessão do seu benefício...</p>
-                    <a href="#">Ler artigo completo ➔</a>
-                </div>
-                
-                <div class="pub-card">
-                    <span class="date">Publicado em 12 de Setembro, 2023</span>
-                    <h4>Contratos Empresariais: Como blindar sua empresa</h4>
-                    <p>A elaboração correta de instrumentos contratuais é a primeira linha de defesa contra litígios societários e trabalhistas...</p>
-                    <a href="#">Ler artigo completo ➔</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section class="panel panel-service is-green">
+      <div class="panel-content">
+        <h3>Defesa e Ações Judiciais</h3>
+        <p>Representação e patrocínio de interesses em processos judiciais e administrativos. Atuação técnica, ágil e comprometida na defesa de direitos perante os Tribunais e órgãos públicos.</p>
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button-white" target="_blank" rel="noopener">Iniciar Defesa</a>
+      </div>
+    </section>
+	
+	    <!-- ===== SOBRE O FUNDADOR ===== -->
+    <section class="panel panel-service panel-sobre is-light">
+      <div class="panel-content">
+        <div class="sobre-header">
+          <span class="sobre-kicker">Fundador e advogado responsável</span>
+          <h2>Francisco G. Vasconcelos Silva</h2>
+        </div>
 
-    <div id="view-cliente" class="view-section hidden">
-        <section class="section-container">
-            <h2 class="section-title">Acesso Exclusivo</h2>
-            
-            <div class="login-container">
-                <h3 style="margin-bottom: 20px; color: var(--primary-color); text-align: center;">Área do Cliente</h3>
-                <p style="font-size: 0.9rem; color: #777; margin-bottom: 20px; text-align: center;">Acompanhe o andamento do seu processo e acesse seus documentos.</p>
-                
-                <input type="text" class="login-input" placeholder="CPF ou CNPJ">
-                <input type="password" class="login-input" placeholder="Senha de Acesso">
-                <button class="cta-button" style="width: 100%; text-align: center;" onclick="alert('Sistema de login será implementado aqui.')">Entrar no Sistema</button>
-            </div>
-        </section>
-    </div>
+        <img class="sobre-foto" src="https://i.ibb.co/RpNx5FHN/Foto-formal.jpg" alt="Francisco G. Vasconcelos Silva">
 
-    <footer>
-        <p><strong>F. Vasconcelos Silva Advocacia</strong> | OAB/DF 88.412</p>
-        <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.7;">&copy; 2023 Francisco G. Vasconcelos Silva. Todos os direitos reservados.</p>
-    </footer>
+        <div class="sobre-texto">
+          <p>Meu primeiro contato com o Direito veio ainda na adolescência, como estagiário na promotoria de justiça da minha cidade. Foi ali, acompanhando de perto histórias reais e decisões que mudavam a vida das pessoas, que a advocacia deixou de ser uma possibilidade e passou a ser o meu objetivo.</p>
+
+          <p>Desde então, construí uma trajetória dedicada ao cuidado técnico com cada caso. Atuo em consultoria, pareceres, planejamento previdenciário, contratos e assessoria empresarial, sempre com a convicção de que um bom trabalho jurídico se revela nos detalhes que poucos conseguem ver.</p>
+
+          <p class="sobre-frase">"Nunca limito minha disposição à aprender e minha capacidade de realizar um bom trabalho. Sigo sempre trilhando o caminho do aprimoramento para aperfeiçoar o profissional que já sou."</p>
+
+          <p>Atendimento humanizado, linguagem acessível e uma advocacia que acompanha o seu tempo: essa é a forma como trabalho.</p>
+
+          <p class="sobre-assinatura"> — Francisco G. Vasconcelos Silva</p>
+          <p class="sobre-oab">OAB/DF 88.412</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section class="panel panel-service panel-diferenciais is-dark">
+      <div class="panel-content">
+        <h3>Por que escolher o escritório <span class="destaque-marca">F. Vasconcelos Silva</span>?</h3>
+        <p>Uma advocacia construída sobre proximidade, clareza e cuidado técnico.</p>
+
+        <div class="diferenciais-grid">
+          <div class="diferencial-item">
+            <h4>Atendimento direto com o advogado</h4>
+            <p>Você conversa com quem efetivamente cuida do seu caso, do primeiro contato ao desfech, sem intermediários e sem retrabalho de explicar sua história várias vezes.</p>
+          </div>
+
+          <div class="diferencial-item">
+            <h4>Linguagem acessível</h4>
+            <p>Nada de juridiquês desnecessário. Cada etapa é explicada de forma que você entenda o que está sendo feito, por que está sendo feito e o que esperar em seguida.</p>
+          </div>
+
+          <div class="diferencial-item">
+            <h4>Perfeccionismo nos detalhes</h4>
+            <p>Cada peça, contrato ou parecer é elaborado com rigor técnico e revisão minuciosa. É no detalhe bem cuidado que qualquer tese consegue se sustentar.</p>
+          </div>
+
+          <div class="diferencial-item">
+            <h4>Advocacia moderna</h4>
+            <p>Atendimento on-line ou presencial, assinatura digital e acompanhamento remoto do seu processo. A tecnologia a serviço da agilidade, sem perder a proximidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PERGUNTAS FREQUENTES ===== -->
+    <section class="panel panel-service panel-faq is-green">
+      <div class="panel-content">
+        <h3>Perguntas Frequentes</h3>
+        <p>Dúvidas comuns de quem está buscando orientação jurídica pela primeira vez.</p>
+
+        <div class="faq-lista">
+          <details class="faq-item" name="faq">
+            <summary>Preciso ir até um escritório para ser atendido?</summary>
+            <p>Não. O atendimento pode ser realizado presencialmente ou realizado integralmente de forma on-line, por videochamada, telefone ou WhatsApp, com envio digital de documentos. Isso permite atender com a mesma qualidade independentemente de onde você esteja.</p>
+          </details>
+
+          <details class="faq-item" name="faq">
+            <summary>Como funciona a primeira conversa?</summary>
+            <p>O primeiro contato serve para entender a sua situação e identificar quais caminhos jurídicos existem. A partir daí, você recebe uma orientação clara sobre viabilidade, prazos e próximos passos antes de decidir qualquer coisa.</p>
+          </details>
+
+          <details class="faq-item" name="faq">
+            <summary>Como são cobrados os honorários?</summary>
+            <p>Os valores são definidos caso a caso, conforme a complexidade e o tempo de dedicação exigidos, sempre respeitando a tabela da OAB. Tudo é apresentado por escrito e acordado antes do início do trabalho — sem surpresas ao longo do caminho.</p>
+          </details>
+
+          <details class="faq-item" name="faq">
+            <summary>Em quais lugares o escritório atua?</summary>
+            <p>A atuação tem sede no Distrito Federal, mas a tramitação eletrônica dos processos permite acompanhar demandas em outras localidades, conforme a natureza de cada caso.</p>
+          </details>
+
+          <details class="faq-item" name="faq">
+            <summary>Quanto tempo demora um processo?</summary>
+            <p>O prazo varia conforme a matéria, o volume de trabalho do órgão julgador e a complexidade da causa. Nenhum advogado sério consegue garantir prazos — o que se pode garantir é acompanhamento constante e informação transparente a cada movimentação.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="panel panel-service is-light">
+      <div class="panel-content">
+        <h3>Vamos conversar sobre o seu caso</h3>
+        <p>O primeiro passo para resolver uma questão jurídica é entendê-la. Entre em contato pelo canal que preferir.</p>
+
+        <div class="contato-lista">
+          <a class="contato-item" href="mailto:contato@fvasconcelossilva.adv.br">contato@fvasconcelossilva.adv.br</a>
+          <a class="contato-item" href="tel:+5561998246058">(61) 99824-6058</a>
+          <a class="contato-item" href="https://instagram.com/fvasconcelossilva.adv" target="_blank" rel="noopener">@fvasconcelossilva.adv</a>
+        </div>
+
+        <a href="https://wa.me/message/AQSF4VGL2SPEH1" class="cta-button" target="_blank" rel="noopener">Falar no WhatsApp</a>
+
+        <p class="contato-nota">Atendimento on-line — Distrito Federal e demais localidades.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ===================== PUBLICAÇÕES ===================== -->
+<div id="view-publicacoes" class="view-section hidden">
+  <div class="stack">
+
+    <section class="panel panel-pub-hero">
+      <div class="panel-intro">
+        <h2>Publicações Jurídicas</h2>
+        <img class="pub-hero-img" src="https://i.ibb.co/QzC8Vmw/pexels-felipepelaquim-8546475.jpg" alt="">
+        <p class="lead">Artigos, análises e atualizações sobre o cenário jurídico atual.</p>
+      </div>
+    </section>
+
+    <section class="panel panel-service panel-artigo is-light pub-carregando" id="pub-status">
+      <div class="panel-content">
+        <p>Carregando publicações…</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ===================== ÁREA DO CLIENTE ===================== -->
+<div id="view-cliente" class="view-section hidden">
+  <div class="stack">
+
+    <section class="panel panel-cliente">
+      <div class="login-card">
+        <img class="login-mark" src="https://i.ibb.co/9HVJcHXP/Apenas-logo-para-fundo-branco.png" alt="">
+        <h2>Área do Cliente</h2>
+        <p class="sub">Acompanhe o andamento do seu processo e acesse seus documentos.</p>
+
+        <form onsubmit="return false;">
+          <label class="sr-only" for="campo-doc">CPF ou CNPJ</label>
+          <input id="campo-doc" class="login-input" type="text" placeholder="CPF ou CNPJ" autocomplete="username">
+
+          <label class="sr-only" for="campo-senha">Senha de acesso</label>
+          <input id="campo-senha" class="login-input" type="password" placeholder="Senha de acesso" autocomplete="current-password">
+
+          <button type="submit" class="cta-button" id="btn-entrar">Entrar no sistema</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="modal-fundo" id="modal-aviso">
+  <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <h3 id="modal-titulo">Acesso não autorizado</h3>
+    <p id="modal-texto"></p>
+    <button type="button" class="cta-button" id="modal-fechar">Entendi</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <img class="footer-logo" src="https://i.ibb.co/PZXY5QGN/Logo-horizontal-com-nome-branco.png" alt="">
+    <small>&copy; 2026 Francisco G. Vasconcelos Silva — Sociedade Individual de Advocacia. Todos os direitos reservados.</small>
+  </div>
+</footer>
 	
 	<script src="logica.js"></script>
 	
